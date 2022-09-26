@@ -1,6 +1,5 @@
 class Game:
-    _id: int
-    _members: list
+    _pixels: list[list[int]]
 
     def __init__(self, members: list, game_id: int):
         self._members = members
@@ -13,3 +12,10 @@ class Game:
     @property
     def id(self):
         return self._id
+
+    @property
+    def pixels(self):
+        return self._pixels
+
+    def  __str__(self):
+        pass
